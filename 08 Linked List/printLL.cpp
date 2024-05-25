@@ -23,12 +23,11 @@ public:
 void printLL(node *head)
 {
     node *temp = head;
+
+    while (temp != NULL)
     {
-        while (temp != NULL)
-        {
-            cout << temp->data << " ";
-            temp = temp->next;
-        }
+        cout << temp->data << " ";
+        temp = temp->next;
     }
 }
 
